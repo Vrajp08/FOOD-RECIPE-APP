@@ -1,38 +1,62 @@
 .App {
-  text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 40px 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchform{
+  margin-top: 23px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchform_input{
+  padding: 6px 4px;
+/* background-color: brown; */
+border-color: rgb(110, 160, 95);
+border-radius: 20px 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchform_search{
+  margin-left: 7px;
+  padding: 6px 4px;
+  background-color: rgba(59, 122, 194, 0.541);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 13px;
+}
+.searchform_search:hover{
+  background-color: black;
+  color: beige;
+  border-radius: 4px;
+}
+.recipeTile {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.recipeTile__img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 23px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipeTile__name {
+  max-width: 200px;
+  text-align: center;
+  margin: 12px 0px;
+}
+.app__recipes {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 220px 220px;
+  align-items: baseline;
+}
+.app_healthLabels{
+  padding: 5px 9px;
+  margin-left: 12px;
+  border-radius: 7px;
 }
